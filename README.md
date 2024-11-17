@@ -1,1 +1,0 @@
-# goll-michael.github.io
