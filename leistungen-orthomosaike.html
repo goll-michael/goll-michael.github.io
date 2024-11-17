@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Bergisch Kopter</title>
+	<meta name="description" content="BergischKopter - Luftaufnahmen für das Bergische Land" />
+	<meta name="robots" content="home, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="js/extern/jquery.js"></script>
+	<script type="text/javascript" src="js/extern/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/intern/image.js"></script>
+	<script type="text/javascript" src="js/intern/public.js"></script>
+	<link rel="shortcut icon" type="image/png" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/all.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/w3.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/intern/public.css" />
+</head>
+<body>
+	<!-- Links (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-center w3-padding w3-white" style="opacity: 0.5;">
+			<a class="w3-button" href="mailto:info@bergischkopter.de"> <em class="fas fa-envelope"></em> info@bergischkopter.de</a>| <a class="w3-button" href="tel:+4915752658696"><em class="fas fa-phone"></em> +49 1575 2658696</a> |
+			<a class="w3-button" href="https://www.instagram.com/bergischkopter"><em class="fab fa-instagram"></em></a>
+			<a class="w3-button" href="https://www.facebook.com/bergischkopter"><em class="fab fa-facebook"></em></a>
+		</div>
+		<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+		<div id="navElement" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 50px">
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Bergisch Kopter</a>
+			<a href="ueber.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Über mich</a>
+			<a href="preise.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Preise</a>
+			<a href="referenzen.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Referenzen</a>
+		</div>
+		<div class="w3-center w3-light-grey w3-card" style="opacity: 0.8;">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="navigationClick()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Bergisch Kopter</a>
+			<a href="ueber.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Über mich</a>
+			<a href="preise.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Preise</a>
+			<a href="referenzen.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Referenzen</a>
+		</div>
+	</div>
+
+	<br/>
+	<br/>
+	
+	<div class="w3-content w3-container w3-center w3-padding-64 w3-light-grey">
+		<div>
+			<span
+				class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Orthomosaike</span>
+		</div>
+
+		<br /> <br />
+
+		<h4>Was sind Orthomosaike?</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l8 m8 w3-opacity">
+				<p>Orthomosaike sind hochauflösende, präzise und nahtlose
+					Luftbilder, die mithilfe von Drohnen und moderner
+					Bildverarbeitungstechnologie erstellt werden. Diese Bilder dienen
+					als georeferenzierte Karten, die eine verzerrungsfreie und genaue
+					Darstellung der Erdoberfläche ermöglichen. Orthomosaike sind
+					äußerst wertvolle Werkzeuge in der Kartografie, Geoinformatik,
+					Landwirtschaft, Umweltüberwachung und vielen anderen Branchen.</p>
+			</div>
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<img src="images/leistungen-orthomosaik-01.jpg" alt="Orthomosaike"
+					style="width: 100%">
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Drohneneinsatz</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<img src="images/leistungen-orthomosaik-02.jpg" alt="Orthomosaike"
+					style="width: 100%">
+			</div>
+			<div class="w3-opacity w3-col l8 m8 w3-opacity">
+				<p>Der Prozess zur Erstellung von Orthomosaike mittels Drohnen
+					ist komplex und umfasst mehrere Schritte:
+				<ul>
+					<i class="far fa-hand-point-right"></i> Bevor die Drohne startet,
+					muss ein Flugplan erstellt werden, um das Gebiet systematisch zu
+					erfassen. Hierbei wird die Flughöhe, die Fluggeschwindigkeit und
+					die Bildüberlappung sorgfältig festgelegt, um hochwertige
+					Luftbilder zu gewährleisten.
+					<br />
+					<i class="far fa-hand-point-right"></i> Die Drohne fliegt über das
+					geplante Gebiet und nimmt dabei eine Reihe von Luftbildern auf.
+					Diese Bilder haben typischerweise eine Überlappung von 60% bis 80%,
+					um eine präzise Rekonstruktion des Geländes zu ermöglichen.
+					<br />
+					<i class="far fa-hand-point-right"></i> Nach dem Flug werden die
+					aufgenommenen Luftbilder in speziellen Softwareanwendungen
+					verarbeitet, die als Fotogrammetrie-Software bezeichnet werden. In
+					diesem Schritt werden die Bilder durch den Einsatz von
+					Bildmatching-Algorithmen ausgerichtet und zu einem großen Mosaik
+					zusammengesetzt.
+				</ul>
+				Die Fotogrammetrie-Software führt eine Orthorektifizierung und
+				anschließend eine Georeferenzierung durch. Bei der
+				Orthorektifizierung werden die entzerrten Luftbilder so angepasst,
+				dass sie eine gleichmäßige Skala haben und keine perspektivischen
+				Verzerrungen aufweisen. Dadurch wird eine hochgenaue geografische
+				Referenzierung erreicht. Die Georeferenzierung versieht die
+				Orthomosaike mit geografischen Koordinaten, wodurch sie in ein
+				geografisches Informationssystem (GIS) oder eine Kartenprojektion
+				integriert werden können. Dadurch wird es möglich, genaue Messungen
+				und geografische Analysen durchzuführen.
+				</p>
+				<p>Die Verwendung von Drohnen zur Erstellung von Orthomosaike
+					bietet eine effiziente, kostengünstige und präzise Möglichkeit,
+					genaue topografische Daten zu erfassen. Durch die ständige
+					Weiterentwicklung der Drohnentechnologie und Fotogrammetriesoftware
+					wird die Erstellung von Orthomosaike noch einfacher und
+					zugänglicher, was dazu beiträgt, diese Technologie in immer mehr
+					Bereichen zu integrieren.</p>
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Verwendung</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l8 m8 w3-opacity">
+				<p>Orthomosaike bieten eine Vielzahl von Vorteilen und
+					Anwendungsbereichen:
+				<ul>
+					<i class="far fa-hand-point-right"></i>
+					<b>Kartografie</b>: Orthomosaike dienen als Grundlage für die
+					Erstellung und Aktualisierung von topografischen Karten und
+					digitale Landkarten.
+					<br />
+					<i class="far fa-hand-point-right"></i>
+					<b>Umweltüberwachung</b>: Sie werden zur Überwachung von
+					Landschaftsveränderungen, wie z. B. Abholzung, Erosion oder
+					Überschwemmungen, verwendet.
+					<br />
+					<i class="far fa-hand-point-right"></i>
+					<b>Landwirtschaft</b>: Orthomosaike unterstützen die Landwirtschaft
+					bei der Überwachung von Feldern, der Identifizierung von
+					Gesundheitszuständen von Pflanzen und der Planung von
+					Bewirtschaftungspraktiken.
+					<br />
+					<i class="far fa-hand-point-right"></i> <b>Stadtplanung</b>: Städteplaner nutzen Orthomosaike zur Bewertung
+					von Stadtentwicklungsprojekten, Verkehrsplanung und
+					Infrastrukturprojekten.
+					<br />
+					<i class="far fa-hand-point-right"></i>
+					<b>Archäologie</b>: Archäologen können Orthomosaike nutzen, um
+					archäologische Strukturen zu entdecken und zu kartieren.
+				</ul>
+				</p>
+			</div>
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<img src="images/leistungen-orthomosaik-03.jpg" alt="Orthomosaike"
+					style="width: 100%">
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

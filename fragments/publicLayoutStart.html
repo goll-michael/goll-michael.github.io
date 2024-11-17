@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	th:with="lang=${#locale.language}" th:lang="${lang}">
+<head>
+	<title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Bergisch Kopter</title>
+	<meta name="description" content="BergischKopter - Luftaufnahmen für das Bergische Land. Anfertigung von gewerblichen Luftaufnahmen (Foto und Video). Alle Drohnen sind haftpflichversichert und beim Luftfahrtbundesamt registriert. Die obligatorische Registrierungsnummer für UAS-Betreiber ist an jeder Drohne angebracht. Es werden selbstverständlich beim Flug alle No-Fly-Zones gemäß § 21h LuftVO berücksichtigt. EU-Kompetenznachweis (A1/A3) und EU-Fernpilotenzeugnis (A2) können vorgewiesen werden. Einem Flug steht also nichts mehr im Wege. Kontakt unter info@bergischkopter.de oder +49 1575 2658696." />
+	<meta name="robots" content="home, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="../../js/extern/jquery.js" th:src="@{/js/extern/jquery.js}"></script>
+	<script type="text/javascript" src="../../js/extern/jquery-3.5.1.min.js" th:src="@{/js/extern/jquery-3.5.1.min.js}"></script>
+	<script type="text/javascript" src="../../js/intern/image.js" th:src="@{/js/intern/image.js}"></script>
+	<script type="text/javascript" src="../../js/intern/public.js" th:src="@{/js/intern/public.js}"></script>
+	<link rel="shortcut icon" type="image/png" th:href="@{/images/favicon.png}"/>
+	<link rel="stylesheet" type="text/css" media="all" href="../../css/extern/all.css" th:href="@{/css/extern/all.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../../css/extern/jquery-ui.min.css" th:href="@{/css/extern/jquery-ui.min.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../../css/extern/w3.css" th:href="@{/css/extern/w3.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../../css/intern/dsvgo.css" th:href="@{/css/intern/dsgvo.css}" />
+	<link rel="stylesheet" type="text/css" media="all" href="../../css/intern/public.css" th:href="@{/css/intern/public.css}" />
+</head>
+<body>
+	
+	<div th:replace="fragments/publicHeader.html :: body"></div>
+
+	<div layout:fragment="custom-content">
+		<p>Your page content goes here</p>
+	</div>
+	
+	<footer th:replace="fragments/publicFooter.html :: body"></footer>
+	
+	<div th:replace="fragments/dsgvo.html :: body"></div>
+	
+</body>
+</html>

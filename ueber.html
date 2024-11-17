@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Bergisch Kopter</title>
+	<meta name="description" content="BergischKopter - Luftaufnahmen für das Bergische Land" />
+	<meta name="robots" content="home, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="js/extern/jquery.js"></script>
+	<script type="text/javascript" src="js/extern/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/intern/image.js"></script>
+	<script type="text/javascript" src="js/intern/public.js"></script>
+	<link rel="shortcut icon" type="image/png" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/all.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/w3.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/intern/public.css" />
+</head>
+<body>
+	<!-- Links (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-center w3-padding w3-white" style="opacity: 0.5;">
+			<a class="w3-button" href="mailto:info@bergischkopter.de"> <em class="fas fa-envelope"></em> info@bergischkopter.de</a>| <a class="w3-button" href="tel:+4915752658696"><em class="fas fa-phone"></em> +49 1575 2658696</a> |
+			<a class="w3-button" href="https://www.instagram.com/bergischkopter"><em class="fab fa-instagram"></em></a>
+			<a class="w3-button" href="https://www.facebook.com/bergischkopter"><em class="fab fa-facebook"></em></a>
+		</div>
+		<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+		<div id="navElement" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 50px">
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Bergisch Kopter</a>
+			<a href="ueber.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Über mich</a>
+			<a href="preise.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Preise</a>
+			<a href="referenzen.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Referenzen</a>
+		</div>
+		<div class="w3-center w3-light-grey w3-card" style="opacity: 0.8;">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="navigationClick()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Bergisch Kopter</a>
+			<a href="ueber.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Über mich</a>
+			<a href="preise.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Preise</a>
+			<a href="referenzen.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Referenzen</a>
+		</div>
+	</div>
+
+	<br/>
+	<br/>
+	
+	<div class="w3-content w3-container w3-center w3-padding-64 w3-light-grey">
+		<div><span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Über mich</span>
+		</div>
+
+		<br /> <br />
+
+		<h4>Willkommen bei Bergisch Kopter</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l8 m8">
+				<p class="w3-opacity">Bergisch Kopter ist ein Unternehmen im
+					Bereich Drohnentechnologie und bietet innovative und günstige
+					Lösungen für vielfältige Branchen. Hinter dem Unternehmen steckt
+					Michael Goll, der bereits auf viele Jahre Drohnenerfahrung
+					zurückblicken kann.</p>
+				<p class="w3-opacity">Drohnen bieten schier endlose
+					Möglichkeiten, die ich meinen Kunden zugänglich machen möchten.
+					Ich möchte die besten, innovativsten und kreativsten
+					Drohnenlösungen bereitstellen, um den Erfolg und die Effizienz
+					meiner Kunden zu steigern. Ich nehme meine Verantwortung ernst
+					und arbeite hart daran, erstklassige und preisgünstige
+					Dienstleistungen und Ergebnisse zu bieten. Ich möchte meinen
+					Kunden helfen, ihre Projekte zu optimieren, Kosten zu reduzieren,
+					die Sicherheit zu erhöhen und gleichzeitig kreative und
+					beeindruckende Inhalte zu erstellen.</p>
+			</div>
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<img src="images/ueber-01.jpg"
+					alt="Rehkitzrettung" style="width: 100%">
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Gesetzliche Grundlagen</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l12 m12">
+				<p class="w3-opacity">Aufgrund der neuen EU-Drohnenverordnungen,
+					die seit dem 01.07.2019 in Kraft getreten sind, ändern sich die
+					notwendigen Voraussetzungen zum Einsatz von Drohnen enorm. Durch
+					die Verordnungen wurde ein rechtlicher Rahmen für die gesamte EU
+					geschaffen, der in jeder Nation umgesetzt werden muss. Die aktuell
+					gültige Durchführungsverordnung (EU) 2019/947 über die Vorschriften
+					und Verfahren für den Betrieb unbemannter Luftfahrzeuge sollten ab
+					dem 31.12.2020 angewendet werden. Nach zahlreichen Anpassungen ist
+					diese Verordnung am 15.06.2021 nun in Deutschland in Kraft
+					getreten. Hierbei wurde jedoch nicht eine allgemeingültige
+					Verodnung verabschiedet, sondern es wurden Anpassungen und
+					Ergänzungen in diversen Gesetzen durchgeführt. Konkrete Änderungen
+					finden sich in der Luftverkehrs-Ordnung (LuftVO), der
+					Luftverkehrs-Zulassungs-Ordnung (LuftVZO), dem Luftverkehrsgesetz
+					(LuftVG) und der Luftfahrtverwaltung (LuftkostV).</p>
+				<p class="w3-opacity">
+					<b>Diese gesetzlichen Grundlagen werden bei <em>jedem</em> Flug
+						vorab geprüft und während des Fluges immer eingehalten.
+					</b>
+				</p>
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Zertifizierungen</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<div class="mySlides w3-center">
+					<img src="images/ausbildung-drohne-01.jpg" style="width: 100%">
+				</div>
+				<div class="mySlides w3-center">
+					<img src="images/ausbildung-drohne-02.jpg" style="width: 100%">
+				</div>
+				<div class="mySlides w3-center">
+					<img src="images/ausbildung-thermografie-01.jpg"
+						style="width: 100%">
+				</div>
+				<div class="mySlides w3-center">
+					<img src="images/ausbildung-thermografie-02.jpg"
+						style="width: 100%">
+				</div>
+			</div>
+			<div class="w3-col l8 m8">
+				<p class="w3-opacity">Sicherheit und Zertifizierung stehen an
+					höchster Stelle. Um die gesetzlichen Anforderungen zu erfüllen,
+					wurden alle notwendigen Zertifizierungen beim Luftfahrtbundesamt
+					absolviert. Für den Bereich der Thermografie wurden spezielle
+					Schulungen besucht, die insbesondere Anforderungen beim Drohnenflug
+					thematisieren.</p>
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Technik</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l8 m8">
+				<p class="w3-opacity">Ich verwende nur hochwertige und aktuelle
+					Drohnenmodelle sowie fortschrittliche Kameras und Sensoren. Das
+					bedeutet bessere Kameras, stabilere Flugsteuerungssysteme, längere
+					Flugzeiten und verbesserte Sensoren. Mit modernen Drohnen können
+					hochwertigere Aufnahmen gemacht und anspruchsvollere Aufgaben
+					bewältigt werden. Aktuelle Drohnen verfügen zudem über verbesserte
+					Sicherheitsfunktionen wie automatische Notfalllandungen,
+					Hinderniserkennungssysteme und präzisere GPS-Steuerung, die
+					Abstürze und Unfälle reduzieren können. Mit immer aktuellen Drohnen
+					kann sichergestellt werden, dass die aktuellen Gesetze und
+					Vorschriften eingehalten werden.</p>
+			</div>
+			<div class="w3-col l4 m4 w3-margin-bottom w3-center">
+				<img src="images/drohne-dji-m3t.gif" style="width: 100%" /><br />
+				<br /> <img src="images/drohne-dji-mini3pro.gif"
+					style="width: 80%" />
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Aerial Culture</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<img src="images/referenzen-aerialculture.jpg" alt="Aerial Culture"
+					style="width: 100%">
+			</div>
+			<div class="w3-col l8 m8">
+				<p class="w3-opacity">Der Bundesverband Copterpiloten ist eine Organisation, die sich der Förderung von Drohnen- und Copter-Flugkultur in Deutschland verschrieben hat. Eine wichtige Initiative des BVCP ist die sogenannte "Aerial Culture", die sich mit der Entwicklung und Verbreitung von Standards und Best Practices im Bereich des Drohnenfliegens befasst.
+
+Die Aerial Culture des BVCP zielt darauf ab, das Bewusstsein und Verständnis für die Verantwortung und die potenziellen Risiken im Zusammenhang mit Drohnenflügen zu schärfen. Hierzu gehört auch die Vermittlung von Kenntnissen über die rechtlichen Rahmenbedingungen und die technischen Anforderungen an Drohnen und Copter. Ein weiteres Ziel der Aerial Culture ist es, eine Community von Copterpiloten und -enthusiasten aufzubauen, die sich regelmäßig austauschen und vernetzen können. Hierzu veranstaltet der BVCP Workshops, Schulungen und Veranstaltungen, um den Austausch von Wissen und Erfahrungen zu fördern. Insgesamt ist die Aerial Culture des BVCP ein wichtiger Beitrag zur Förderung einer verantwortungsvollen und sicheren Drohnenflugkultur in Deutschland.
+
+Der erste Punkt besagt, dass wir stets eine Kultur des respektvollen Umgangs und der Rücksichtnahme untereinander und gegenüber der Gesellschaft pflegen.
+
+Wir fliegen im Zusammenhang mit einer unternehmerischen Tätigkeit nie ohne Genehmigung oder Lizenz der zuständigen Behörden und wahren und respektiven grundsätzlich die Privatsphäre und den personenbezogenen Datenschutz.
+
+Wir tragen die Verantwortung, uns stets über lokale Vorschriften zu informieren und halten uns an die gesetzlich vorgeschriebene Flughöhe.
+
+Punkt fünf beschreibt das Konzept „Always Safe“ und meint, dass wir uns an die Vorschriften für Flugsicherheit und den Betrieb des Copters, sowie an die gesetzlichen Bestimmungen halten.
+
+Die Punkte sechs und sieben unterscheiden gewerbliche und private Copter Piloten. Als gewerbliche Copter Piloten bieten wir unsere Leistung zu marktgerechten Konditionen an und unterstützen kein Preisdumping und als private Copter Piloten führen wir unser Hobby stets verantwortungsbewusst aus.
+
+In der stetig wachsenden Community pflegen wir einen höflichen Umgangston untereinander und über die sozialen Medien und fördern das Wissen über Copter und stärken so das positive Bild der Copter Piloten in der Öffentlichkeit.
+
+Der letzte Punkt ist zwar vom Luftfahrtbundesamt bereits vorgegeben, aber möglicherweise nicht jedem bekannt, daher wird noch einmal bekräftigt, dass das Fliegen nur mit einer gültigen Haftpflichtversicherung möglich ist.
+
+</p>
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l3 m3">&nbsp;</div>
+			<div id="angebot-anfordern" class="w3-col l6 m6 w3-center">
+				<p class="w3-opacity">Kontaktieren Sie mich: Lassen Sie uns
+					gemeinsam in die Zukunft abheben! Wenn Sie nach innovativen und
+					zuverlässigen Drohnenlösungen suchen oder mehr über unsere
+					Dienstleistungen erfahren möchten, nehmen Sie gerne Kontakt zu mir
+					auf.</p>
+					<p class="w3-opacity"><b>Bergisch Kopter - Ihr Partner für Drohnenflüge im Bergischen
+					Land!</b></p>
+				<p class="w3-opacity">
+					<a href="mailto:info@bergischkopter.de"
+						class="w3-bar-item w3-button w3-padding-large"><em
+						class="fa fa-check-double"></em> Jetzt Angebot anfordern</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

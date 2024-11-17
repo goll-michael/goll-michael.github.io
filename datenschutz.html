@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Bergisch Kopter</title>
+	<meta name="description" content="BergischKopter - Luftaufnahmen für das Bergische Land" />
+	<meta name="robots" content="home, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="js/extern/jquery.js"></script>
+	<script type="text/javascript" src="js/extern/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/intern/image.js"></script>
+	<script type="text/javascript" src="js/intern/public.js"></script>
+	<link rel="shortcut icon" type="image/png" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/all.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/w3.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/intern/public.css" />
+</head>
+<body>
+	<!-- Links (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-center w3-padding w3-white" style="opacity: 0.5;">
+			<a class="w3-button" href="mailto:info@bergischkopter.de"> <em class="fas fa-envelope"></em> info@bergischkopter.de</a>| <a class="w3-button" href="tel:+4915752658696"><em class="fas fa-phone"></em> +49 1575 2658696</a> |
+			<a class="w3-button" href="https://www.instagram.com/bergischkopter"><em class="fab fa-instagram"></em></a>
+			<a class="w3-button" href="https://www.facebook.com/bergischkopter"><em class="fab fa-facebook"></em></a>
+		</div>
+		<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+		<div id="navElement" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 50px">
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Bergisch Kopter</a>
+			<a href="ueber.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Über mich</a>
+			<a href="preise.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Preise</a>
+			<a href="referenzen.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Referenzen</a>
+		</div>
+		<div class="w3-center w3-light-grey w3-card" style="opacity: 0.8;">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="navigationClick()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Bergisch Kopter</a>
+			<a href="ueber.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Über mich</a>
+			<a href="preise.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Preise</a>
+			<a href="referenzen.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Referenzen</a>
+		</div>
+	</div>
+
+	<br/>
+	<br/>
+	
+	<div class="w3-content w3-container w3-center w3-padding-64 w3-light-grey">
+
+		<div>
+			<span
+				class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Datenschutzerklärung</span>
+		</div>
+
+		<br />
+		
+		<div class="w3-content w3-container">
+
+			<p class="w3-large">Benennung der verantwortlichen Stelle</p>
+
+			<p>Die verantwortliche Stelle für die Datenverarbeitung auf
+				dieser Website ist:</p>
+			<p>
+				Michael Goll
+			</p>
+			<p class="w3-justify">Die verantwortliche Stelle entscheidet
+				allein oder gemeinsam mit anderen über die Zwecke und Mittel der
+				Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten
+				o. Ä.).</p>
+			<p class="w3-large">Widerruf Ihrer Einwilligung zur
+				Datenverarbeitung</p>
+			<p class="w3-justify">Nur mit Ihrer ausdrücklichen Einwilligung
+				sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf
+				Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den
+				Widerruf genügt eine formlose Mitteilung per E-Mail. Die
+				Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung
+				bleibt vom Widerruf unberührt.</p>
+			<p class="w3-large">Recht auf Beschwerde bei der zuständigen
+				Aufsichtsbehörde</p>
+
+			<p class="w3-justify">
+				Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen
+				Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde
+				zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher
+				Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem
+				sich der Sitz unseres Unternehmens befindet. Der folgende Link
+				stellt eine Liste der Datenschutzbeauftragten sowie deren
+				Kontaktdaten bereit: <a
+					href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.
+			</p>
+			<p class="w3-large">Recht auf Datenübertragbarkeit</p>
+			<p class="w3-justify">Ihnen steht das Recht zu, Daten, die auf
+				Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags
+				automatisiert verarbeitet werden, an sich oder an Dritte aushändigen
+				zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren
+				Format. Sofern Sie die direkte Übertragung der Daten an einen
+				anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es
+				technisch machbar ist.</p>
+			<p class="w3-large">Recht auf Auskunft, Berichtigung, Sperrung,
+				Löschung</p>
+			<p class="w3-justify">Sie haben jederzeit im Rahmen der geltenden
+				gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft über
+				Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten,
+				deren Empfänger und den Zweck der Datenverarbeitung und ggf. ein
+				Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
+				Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene
+				Daten können Sie sich jederzeit über die im Impressum aufgeführten
+				Kontaktmöglichkeiten an uns wenden.</p>
+			<p class="w3-large">SSL- bzw. TLS-Verschlüsselung</p>
+			<p class="w3-justify">Aus Sicherheitsgründen und zum Schutz der
+				Übertragung vertraulicher Inhalte, die Sie an uns als
+				Seitenbetreiber senden, nutzt unsere Website eine SSL-bzw.
+				TLS-Verschlüsselung. Damit sind Daten, die Sie über diese Website
+				übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine
+				verschlüsselte Verbindung an der „https://“ Adresszeile Ihres
+				Browsers und am Schloss-Symbol in der Browserzeile.</p>
+			<p class="w3-large">Server-Log-Dateien</p>
+			<p class="w3-justify">In Server-Log-Dateien erhebt und speichert
+				der Provider der Website automatisch Informationen, die Ihr Browser
+				automatisch an uns übermittelt. Dies sind:</p>
+			<p class="w3-justify">
+				- Besuchte Seite auf unserer Domain<br /> - Datum und Uhrzeit der
+				Serveranfrage<br /> - Browsertyp und Browserversion<br /> -
+				Verwendetes Betriebssystem<br /> - Referrer URL<br /> - Hostname
+				des zugreifenden Rechners<br /> - IP-Adresse
+			</p>
+			<p class="w3-justify">Es findet keine Zusammenführung dieser
+				Daten mit anderen Datenquellen statt. Grundlage der
+				Datenverarbeitung bildet Art. 6 Abs. 1 lit. b DSGVO, der die
+				Verarbeitung von Daten zur Erfüllung eines Vertrags oder
+				vorvertraglicher Maßnahmen gestattet.</p>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Bergisch Kopter</title>
+	<meta name="description" content="BergischKopter - Luftaufnahmen für das Bergische Land" />
+	<meta name="robots" content="home, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="js/extern/jquery.js"></script>
+	<script type="text/javascript" src="js/extern/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/intern/image.js"></script>
+	<script type="text/javascript" src="js/intern/public.js"></script>
+	<link rel="shortcut icon" type="image/png" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/all.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/extern/w3.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/intern/public.css" />
+</head>
+<body>
+	<!-- Links (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-center w3-padding w3-white" style="opacity: 0.5;">
+			<a class="w3-button" href="mailto:info@bergischkopter.de"> <em class="fas fa-envelope"></em> info@bergischkopter.de</a>| <a class="w3-button" href="tel:+4915752658696"><em class="fas fa-phone"></em> +49 1575 2658696</a> |
+			<a class="w3-button" href="https://www.instagram.com/bergischkopter"><em class="fab fa-instagram"></em></a>
+			<a class="w3-button" href="https://www.facebook.com/bergischkopter"><em class="fab fa-facebook"></em></a>
+		</div>
+		<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+		<div id="navElement" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 50px">
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Bergisch Kopter</a>
+			<a href="ueber.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Über mich</a>
+			<a href="preise.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Preise</a>
+			<a href="referenzen.html" class="w3-bar-item w3-button w3-padding-large" onclick="navigationClick()">Referenzen</a>
+		</div>
+		<div class="w3-center w3-light-grey w3-card" style="opacity: 0.8;">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="navigationClick()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Bergisch Kopter</a>
+			<a href="ueber.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Über mich</a>
+			<a href="preise.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Preise</a>
+			<a href="referenzen.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Referenzen</a>
+		</div>
+	</div>
+
+	<br/>
+	<br/>
+	
+	<div class="w3-content w3-container w3-center w3-padding-64 w3-light-grey">
+		<div>
+			<span
+				class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Rehkitzrettung</span>
+		</div>
+
+		<br /> <br />
+
+		<h4>Was ist Rehkitzrettung?</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l8 m8 w3-opacity">
+				<p>Die Rehkitzrettung bezieht sich auf
+					Maßnahmen, die ergriffen werden, um junge Rehe vor Verletzungen
+					oder dem Tod während der landwirtschaftlichen Mahd oder Ernte zu
+					schützen. Während dieser Zeiten suchen Rehkitze gerne Schutz im
+					hohen Gras und bleiben dort regungslos liegen, um sich vor Feinden
+					zu verstecken. Dieses Verhalten kann jedoch zu gefährlichen
+					Situationen führen, wenn landwirtschaftliche Maschinen über die
+					Felder fahren und die Kitz in Gefahr bringen. Um die Rehkitze zu
+					retten, werden verschiedene Methoden angewendet. Eine davon ist die
+					Durchführung von Vorab-Inspektionen des Feldes, bevor die Maschinen
+					eingesetzt werden. Speziell trainierte Hunde oder Drohnen können
+					eingesetzt werden, um die Anwesenheit von Rehkitzen im Gras
+					aufzuspüren. Wenn ein Kitz gefunden wird, wird es vorsichtig aus
+					dem Gefahrenbereich entfernt und an einem sicheren Ort abgesetzt.
+					Eine andere Methode ist der Einsatz von Warngeräten, die
+					Hochfrequenzgeräusche oder Vibrationen erzeugen, um die Rehkitze
+					dazu zu bringen, das Feld zu verlassen, bevor die Mahd beginnt.
+					Diese Geräte sollen die Tiere abschrecken und sie dazu animieren,
+					sich in Sicherheit zu bringen.</p>
+			</div>
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<img src="images/leistungen-kitzrettung-04.jpg"
+					alt="Rehkitzrettung" style="width: 100%">
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Bewusstsein schaffen</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l12 m12 w3-opacity">
+				<p>Die Rehkitzrettung hat in den letzten
+					Jahren an Bedeutung gewonnen, da das Bewusstsein für den Schutz von
+					Wildtieren während landwirtschaftlicher Aktivitäten gestiegen ist.
+					Viele Landwirte und Landwirtinnen sind bereit, Maßnahmen zu
+					ergreifen, um den Rehkitzen zu helfen und ihre Lebensräume zu
+					erhalten. Darüber hinaus gibt es in einigen Regionen auch
+					ehrenamtliche Organisationen und Projekte, die sich speziell der
+					Rehkitzrettung widmen. Die Rehkitzrettung ist ein wichtiges
+					Beispiel für den Einklang von Naturschutz und Landwirtschaft. Durch
+					die Implementierung von Maßnahmen zum Schutz von Rehkitzen können
+					tragische Verluste vermieden und gleichzeitig die
+					landwirtschaftliche Produktion aufrechterhalten werden. Es ist eine
+					positive Entwicklung, die dazu beiträgt, die empfindliche Balance
+					zwischen Mensch und Natur zu wahren.</p>
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Drohneneinsatz</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<img src="images/leistungen-kitzrettung-02.jpg"
+					alt="Rehkitzrettung" style="width: 100%">
+			</div>
+			<div class="w3-col l8 m8 w3-opacity">
+				<p>
+					Die Rehkitzrettung mithilfe von Drohnen ist eine moderne Methode,
+					um junge Rehe vor Verletzungen während der landwirtschaftlichen
+					Mahd zu schützen. Drohnen bieten eine effiziente und präzise
+					Möglichkeit, große Flächen schnell zu überfliegen und Rehkitze im
+					hohen Gras aufzuspüren. <br /> Der Prozess der Rehkitzrettung mit
+					Drohnen beinhaltet in der Regel folgende Schritte:
+				<ul>
+					<i class="far fa-hand-point-right"></i> Bei der Kitzrettung wird
+					zunächst die zu befliegende Fläche geplant. Das Befliegen sollte
+					kurz vor der Mahd stattfinden, da die Rehkitze nach dem Aussetzen
+					oftmals wieder an ihren ursprünglichen Liegeplatz zurückkehren.
+					<br />
+					<i class="far fa-hand-point-right"></i> Die Fläche wird
+					anschließend vollständig abgeflogen (üblicherweise in 50m-70m
+					Höhe).
+					<br />
+					<i class="far fa-hand-point-right"></i> Gefundene Rehkitze werden
+					durch Helfer in Verwahrungsboxen gelegt und nach der Mahd wieder
+					freigelassen.
+				</ul>
+				Der Einsatz von Drohnen minimiert das Störungsrisiko für die Tiere
+				im Vergleich zu menschlichen Helfern, die möglicherweise das Gras
+				betreten und die Rehkitze dadurch aufscheuchen könnten. Es ist
+				jedoch wichtig zu beachten, dass die erfolgreiche Durchführung der
+				Rehkitzrettung mit Drohnen eine sorgfältige Planung, Schulung der
+				Drohnenpiloten und Zusammenarbeit mit relevanten Behörden und
+				Landwirten erfordert. Es müssen auch Aspekte wie die Einhaltung von
+				Flugbeschränkungen und Datenschutzbestimmungen berücksichtigt
+				werden, um eine verantwortungsvolle und effektive Nutzung von
+				Drohnen in der Rehkitzrettung zu gewährleisten.
+				</p>
+			</div>
+		</div>
+
+		<br /> <br />
+
+		<h4>Ansprechpartner</h4>
+		<div class="w3-row-padding w3-justify">
+			<div class="w3-col l8 m8 w3-opacity">
+				<p>Bei der Rehkitzrettung handelt es sich
+					rechtlich gesehen um "Jagdausübung" aufgrund des Aufsuchens und
+					Fangens von Wild. Dies ist dem Jagdausübungsberechtigten des
+					jeweiligen Reviers vorbehalten, den Sie bitte vor Beauftragung
+					eines Drohenflugs kontaktieren müssen.</p>
+				<p>Bitte wenden Sie sich an folgende Vereine,
+					wenn Sie Interesse an der Rehkitzrettung für Ihre
+					landwirtschaftlichen Flächen haben:
+				<p>
+				<ul>
+					<i class="far fa-hand-point-right"></i> Odenthal:
+					<a href="https://www.wildtierrettung-rhein-berg.de/"
+						class="w3-medium w3-hover-text-green">Wildtierrettung
+						Rhein-Berg</a>
+					<br />
+					<i class="far fa-hand-point-right"></i> Radevormwald:
+					<a href="https://www.rader-kitzrettung.de"
+						class="w3-medium w3-hover-text-green">Rader Kitzrettung</a>
+					<br />
+					<i class="far fa-hand-point-right"></i> Solingen:
+					<a href="https://solingen.ljv-nrw.de/"
+						class="w3-medium w3-hover-text-green">Kreisjägerschaft
+						Solingen</a>
+				</ul>
+				</p>
+				<p>Gerne unterstützen ich Sie bei der
+					Ermittlung der Ansprechpartner in Ihrem Revier.</p>
+			</div>
+			<div class="w3-col l4 m4 w3-margin-bottom">
+				<img src="images/leistungen-kitzrettung-03.jpg"
+					alt="Rehkitzrettung" style="width: 100%">
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
